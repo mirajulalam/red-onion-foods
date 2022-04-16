@@ -1,0 +1,15 @@
+.food-details {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px gray;
+    text-align: center;
+    padding: 20px;
+}
+
+.food-details img {
+    width: 100%;
+}
+
+.food-details .food-info {
+    margin-top: 40px;
+}

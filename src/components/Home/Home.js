@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from '../Header/Header';
+import Foods from '../Foods/Foods';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import './Home.css';
 const Home = () => {
     return (
         <div>
             <HomeBanner></HomeBanner>
+            <Foods></Foods>
         </div>
     );
 };

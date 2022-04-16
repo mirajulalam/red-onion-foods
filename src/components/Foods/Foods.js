@@ -1,4 +1,7 @@
-[
+import React, { useState } from 'react';
+import Food from '../Food/Food';
+import './Foods.css';
+const foods = [
     {
         "id": "625a5ddc36045d006744b611",
         "picture": "https://i.ibb.co/1QBjpdf/breakfast1.png",
@@ -143,4 +146,33 @@
         "name": "Baked Chiken",
         "category": "dinner"
     }
-]
+];
+
+const breakfast = foods.filter(food => food.category.includes('breakfast'));
+const lunch = foods.filter(food => food.category.includes('lunch'));
+const dinner = foods.filter(food => food.category.includes('dinner'));
+
+
+const Foods = () => {
+    const [selectedFoods, setSelectedFoods] = useState(breakfast);
+
+    return (
+        <div className='container'>
+            <div className='btn-container'>
+                <button onClick={() => setSelectedFoods(breakfast)}>Breakfast</button>
+                <button onClick={() => setSelectedFoods(lunch)}>Lunch</button>
+                <button onClick={() => setSelectedFoods(dinner)}>Dinner</button>
+            </div>
+            <div className='foods-container'>
+                {
+                    selectedFoods.map(selectedFood => <Food
+                        key={selectedFood.id}
+                        selectedFood={selectedFood}
+                    ></Food>)
+                }
+            </div>
+        </div>
+    );
+};
+
+export default Foods;
