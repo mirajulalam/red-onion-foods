@@ -1,0 +1,26 @@
+.home-container {
+    background-image: url('../../images/bannerbackground1.png');
+    width: 1364px;
+    height: 556px;
+    text-align: center;
+}
+
+.home-title {
+    padding-top: 140px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.home-search-section {
+    text-align: center;
+}
+
+.home-container input {
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+}
