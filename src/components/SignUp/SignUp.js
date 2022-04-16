@@ -26,16 +26,18 @@ const SignUp = () => {
         event.preventDefault();
     }
     return (
-        <div className='from-signup'>
-            <img className='text-center' src={logoImages} alt="" />
-            <form onSubmit={handleCreateUser}>
-                <input onBlur={handleNameBlur} type="text" name="name" id="" placeholder='Name' required />
-                <input onBlur={handleEmailBlur} type="email" name="email" id="" placeholder='Email' required />
-                <input onBlur={handlePasswordBlur} type="password" name="password" id="" placeholder='Password' required />
-                <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" placeholder='Confirm password' required />
-                <input type="submit" value="Submit" />
-            </form>
-            <Link to='/login' className='text-danger pe-auto text-decoration-none'><p>Already have an account</p></Link>
+        <div className="form-container">
+            <div className='from-signup'>
+                <img className='text-center' src={logoImages} alt="" />
+                <form onSubmit={handleCreateUser}>
+                    <input onBlur={handleNameBlur} type="text" name="name" id="" placeholder='Name' required />
+                    <input onBlur={handleEmailBlur} type="email" name="email" id="" placeholder='Email' required />
+                    <input onBlur={handlePasswordBlur} type="password" name="password" id="" placeholder='Password' required />
+                    <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" placeholder='Confirm password' required />
+                    <input type="submit" value="Submit" />
+                </form>
+                <Link to='/login' className='text-danger pe-auto text-decoration-none'><p>Already have an account</p></Link>
+            </div>
         </div>
     );
 };

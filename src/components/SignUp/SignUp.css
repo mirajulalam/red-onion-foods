@@ -1,4 +1,13 @@
+.form-container {
+    background-image: url('../../images/bannerbackground3.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 1364px;
+    height: 556px;
+}
+
 .from-signup {
+
     width: 50%;
     margin: 0 auto;
 }

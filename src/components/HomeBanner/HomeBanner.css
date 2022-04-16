@@ -1,5 +1,7 @@
 .home-container {
     background-image: url('../../images/bannerbackground1.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
     width: 1364px;
     height: 556px;
     text-align: center;
