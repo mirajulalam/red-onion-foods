@@ -1,0 +1,20 @@
+.sevices-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+    margin-bottom: 50px;
+}
+
+.sevices-container img {
+    width: 100%;
+}
+
+.services-details {
+    padding: 25px;
+}
+
+.chef-details {
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 20px;
+}

@@ -3,12 +3,13 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css';
 import logo2 from '../../images/logo2.png'
 import CustomLink from '../CustomLink/CustomLink';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="white" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand as={Link} to="/">
                         <img style={{ height: "40px" }} src={logo2} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,6 +26,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
         </div>
     );
 };

@@ -1,9 +1,14 @@
 .food-details {
-    border: 1px solid gray;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px gray;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+}
+
+.food-details:hover {
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px 5px gray;
+
+
 }
 
 .food-details img {

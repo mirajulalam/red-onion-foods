@@ -1,0 +1,12 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    color: white;
+}
+
+.footer-container img {
+    color: white;
+    height: 40px;
+    margin-bottom: 40px;
+}

@@ -6,19 +6,18 @@
     height: 556px;
 }
 
-.from-signup {
-
+.from-info {
     width: 50%;
     margin: 0 auto;
 }
 
-.from-signup img {
+.from-info img {
     height: 50px;
     display: block;
     text-align: center;
 }
 
-.from-signup input {
+.from-info input {
     display: block;
     width: 100%;
     margin-bottom: 15px;
